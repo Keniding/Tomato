@@ -60,4 +60,7 @@ dependencies {
 
     // cardview IMPORT
     implementation libs.advancedcardview
+
+    implementation libs.circleimageview
+
 }

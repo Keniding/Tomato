@@ -1,6 +1,8 @@
 [versions]
 advancedcardview = "1.0.1"
 agp = "8.4.0"
+circleimageview = "3.1.0"
+flexbox = "3.0.0"
 gradle = "7.0.4"
 junit = "4.13.2"
 junitVersion = "1.1.5"
@@ -12,6 +14,8 @@ constraintlayout = "2.1.4"
 
 [libraries]
 advancedcardview = { module = "com.github.sina-seyfi:AdvancedCardView", version.ref = "advancedcardview" }
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+flexbox = { module = "com.google.android:flexbox", version.ref = "flexbox" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

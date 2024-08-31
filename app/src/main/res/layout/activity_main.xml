@@ -169,20 +169,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_margin="10dp"
+            android:paddingTop="10dp"
             tools:ignore="UselessParent">
 
 
             <TextView
+                style="@style/CustomCheckBoxStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/bauhs"
                 android:textColor="@color/colorPrimary"
                 android:text="Restaurant System for Android"
                 android:textAlignment="center"
-                android:textSize="23sp"
-                android:textStyle="bold" />
+                android:textSize="18sp" />
         </LinearLayout>
 
     </FrameLayout>
