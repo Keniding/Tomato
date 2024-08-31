@@ -1,6 +1,6 @@
 [versions]
 advancedcardview = "1.0.1"
-agp = "8.5.1"
+agp = "8.4.0"
 gradle = "7.0.4"
 junit = "4.13.2"
 junitVersion = "1.1.5"
