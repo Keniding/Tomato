@@ -46,7 +46,7 @@
                     android:textSize="50sp"
                     android:textColor="@color/white"
                     android:textAlignment="textStart"
-                    android:fontFamily="@font/bauhs"
+                    android:fontFamily="@font/bauhst"
                     android:layout_marginTop="15dp"/>
 
                 <TextView
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:text="Henry"
                     android:textSize="45sp"
-                    android:fontFamily="@font/bauhs"
+                    android:fontFamily="@font/bauhst"
                     android:textColor="@color/colorPrimary"
                     android:textAlignment="textStart"
                     android:layout_marginBottom="15dp"/>

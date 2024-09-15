@@ -4,8 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#ED0000</color>
     <color name="gris">#B3ABAB</color>
-    <color name="colorPrimary">#002E26</color>
-    <color name="colorSecondary">#009B75</color>
-
+    <color name="colorPrimary">#01594A</color>
+    <color name="colorSecondary">#009571</color>
+    <color name="colorError">#E91E63</color>
 
 </resources>

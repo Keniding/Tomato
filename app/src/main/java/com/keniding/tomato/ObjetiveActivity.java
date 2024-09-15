@@ -26,9 +26,9 @@ public class ObjetiveActivity extends AppCompatActivity {
             binding.registerTitle.setTextColor(getResources().getColor(R.color.white));
             binding.invitado.setBackgroundColor(getResources().getColor(R.color.white));
 
-            Intent intent = new Intent(ObjetiveActivity.this, MainActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
-            finish();
+            //finish();
         });
 
         binding.invitado.setOnClickListener(v -> {
@@ -36,7 +36,6 @@ public class ObjetiveActivity extends AppCompatActivity {
             binding.invitadoDescription.setTextColor(getResources().getColor(R.color.white));
             binding.invitadoTitle.setTextColor(getResources().getColor(R.color.white));
             binding.register.setBackgroundColor(getResources().getColor(R.color.white));
-
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -45,4 +44,5 @@ public class ObjetiveActivity extends AppCompatActivity {
             return insets;
         });
     }
+
 }

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="TransparentStatusBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="buttonStyle">@style/MyButtonStyle</item>
+        <item name="colorAccent">@color/colorSecondary</item>
+    </style>
+
     <style name="CustomCheckBoxStyle">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textSize">18sp</item>
@@ -7,4 +14,26 @@
         <item name="android:padding">10dp</item>
         <item name="android:layout_margin">5dp</item>
     </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+
+
 </resources>

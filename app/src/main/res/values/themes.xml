@@ -9,7 +9,7 @@
 
 
     <style name="tittle" parent="Base.Theme.Tomato">
-        <item name="fontFamily">@font/bauhs</item>
+        <item name="fontFamily">@font/bauhst</item>
         <item name="android:textSize">40sp</item>
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:layout_marginTop">10dp</item>

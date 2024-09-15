@@ -1,214 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background_gradient"
     android:fitsSystemWindows="true"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
-            <FrameLayout
+            <com.sinaseyfi.advancedcardview.AdvancedCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="40dp"
-                android:background="@drawable/rounded_right_transparent"
-                android:elevation="10dp">
+                android:layout_marginBottom="50dp"
+                app:cornerRadius_BottomRight="50dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    tools:ignore="UselessParent">
-
-                    <ImageView
-                        android:layout_width="130dp"
-                        android:layout_height="130dp"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="5dp"
-                        android:alpha="0.7"
-                        android:contentDescription="TODO"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/logo" />
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:fontFamily="@font/bauhs"
-                            android:text="Tomato"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="50sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="15dp"
-                            android:fontFamily="@font/bauhs"
-                            android:text="Welcome"
-                            android:textAlignment="textStart"
-                            android:textColor="@color/white"
-                            android:textSize="35sp" />
-                    </LinearLayout>
-
-
-                </LinearLayout>
-            </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/rounded_left_transparent"
-                android:elevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    tools:ignore="UselessParent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center_vertical"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="25dp"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginRight="25dp"
-                            android:layout_marginBottom="25dp"
-                            android:orientation="vertical"
-                            android:padding="20dp">
+                            android:text="bene"
+                            android:textSize="75sp"
+                            android:textColor="@color/colorPrimary"
+                            android:textAlignment="textStart"
+                            android:fontFamily="@font/bauhst"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="25dp"/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_horizontal"
-                                android:layout_marginBottom="20dp"
-                                android:fontFamily="@font/bauhs"
-                                android:text="Iniciar sesión"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="40sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="fits"
+                            android:textSize="75sp"
+                            android:fontFamily="@font/bauhst"
+                            android:textColor="@color/colorSecondary"
+                            android:textAlignment="textStart"
+                            android:layout_marginTop="25dp"/>
 
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginHorizontal="12dp"
-                                android:layout_marginVertical="10dp"
-
-                                >
-
-                                <EditText
-                                    android:id="@+id/username"
-                                    style="@style/CustomCheckBoxStyle"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="15dp"
-                                    android:hint="Nombre de usuario"
-                                    android:inputType="text"
-                                    android:padding="15dp"
-                                    android:textColor="@color/colorPrimary"
-                                    android:textSize="20sp"
-                                    android:textStyle="bold" />
-                            </com.google.android.material.textfield.TextInputLayout>
-
-
-                            <EditText
-                                android:id="@+id/password"
-                                style="@style/CustomCheckBoxStyle"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginBottom="15dp"
-                                android:hint="Contraseña"
-                                android:inputType="textPassword"
-                                android:padding="15dp"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <CheckBox
-                                style="@style/CustomCheckBoxStyle"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="15dp"
-                                android:layout_marginBottom="15dp"
-                                android:padding="10dp"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="10dp"
-                                android:text="Recordar contraseña"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <Button
-                                android:id="@+id/login_button"
-                                style="@style/CustomCheckBoxStyle"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="@color/colorSecondary"
-                                android:padding="10dp"
-                                android:text="Iniciar sesión"
-                                android:textColor="@android:color/white"
-                                android:textSize="23sp" />
-                        </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-            </FrameLayout>
-
-            <FrameLayout
-                android:id="@+id/customCardView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/rounded_right_transparent"
-                android:elevation="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingTop="10dp"
-                    tools:ignore="UselessParent">
-
 
                     <TextView
-                        style="@style/CustomCheckBoxStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="Restaurant System for Android"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="18sp" />
+                        android:text="Qué bueno verte de nuevo"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/bauhst"
+                        android:textColor="@color/colorSecondary"
+                        android:textAlignment="textStart"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginBottom="25dp"/>
+
                 </LinearLayout>
 
-            </FrameLayout>
+            </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="25dp"
+                    app:errorEnabled="true"
+                    app:boxStrokeWidth="0dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bauhst"
+                        android:textSize="12sp"
+                        android:inputType="textEmailAddress"
+                        android:hint="Correo"
+                        android:background="@null"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilClave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:hint="Contraseña"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeWidth="0dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tietClave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bauhst"
+                        android:textSize="12sp"
+                        android:inputType="textPassword"
+                        android:background="@null"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnAcceder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Acceder"
+                    android:fontFamily="@font/bauhst"
+                    android:layout_marginHorizontal="50dp"
+                    style="@style/CustomButtonStyle"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Olvidaste tu contraseña?"
+                    android:fontFamily="@font/bauhst"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="50dp"
+                    style="@style/CustomButtonStyle"/>
+
+                <Button
+                    android:id="@+id/btnCrearCuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Crear cuenta"
+                    android:fontFamily="@font/bauhst"
+                    android:layout_marginHorizontal="50dp"
+                    style="@style/CustomButtonStyle"/>
+
+            </LinearLayout>
 
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

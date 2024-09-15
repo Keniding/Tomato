@@ -1,66 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/background_gradient"
-    >
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <FrameLayout
+    <data>
+        <variable
+            name="titleText"
+            type="String" />
+        <variable
+            name="subtitleText"
+            type="String" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/menu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rounded_right_transparent"
-        android:elevation="10dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_gradient">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="UselessParent"
-            android:layout_marginEnd="5dp">
-
-            <ImageView
-                android:layout_width="130dp"
-                android:layout_height="130dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="5dp"
-                android:contentDescription="TODO"
-                android:scaleType="fitCenter"
-                android:src="@drawable/logo"
-                android:alpha="0.7"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Welcome"
-                    android:textSize="40sp"
-                    android:textColor="@color/white"
-                    android:textAlignment="textStart"
-                    android:fontFamily="@font/bauhs"
-                    android:layout_marginTop="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Henry"
-                    android:textSize="45sp"
-                    android:fontFamily="@font/bauhs"
-                    android:textColor="@color/colorPrimary"
-                    android:textAlignment="textStart"
-                    android:layout_marginBottom="15dp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </FrameLayout>
+        <include
+            layout="@layout/component_header"
+            android:id="@+id/header"
+            app:titleText="@{titleText}"
+            app:subtitleText="@{subtitleText}" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -261,3 +222,4 @@
     </ScrollView>
 
 </LinearLayout>
+</layout>

@@ -1,0 +1,65 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="titleText"
+            type="String" />
+        <variable
+            name="subtitleText"
+            type="String" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded_right_transparent"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:alpha="0.7"
+                android:contentDescription="TODO"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/capriola"
+                    android:text="@{titleText}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/capriola"
+                    android:text="@{subtitleText}"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
