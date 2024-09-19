@@ -31,8 +31,7 @@
                 android:layout_marginEnd="5dp"
                 android:contentDescription="TODO"
                 android:scaleType="fitCenter"
-                android:alpha="0.8"
-                android:src="@drawable/tomatoso" />
+                android:src="@drawable/tomato_chef" />
 
             <LinearLayout
                 android:layout_width="match_parent"
