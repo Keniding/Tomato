@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "692607762044",
+    "project_id": "tomato-android-aea0a",
+    "storage_bucket": "tomato-android-aea0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:692607762044:android:6363a55ef0b9b15a3b53f9",
+        "android_client_info": {
+          "package_name": "com.keniding.tomato"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdyQbGKuff2o4tTf2ST3vVBxZCJjxv8pI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

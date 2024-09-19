@@ -2,6 +2,7 @@
 advancedcardview = "1.0.1"
 agp = "8.4.0"
 circleimageview = "3.1.0"
+firebaseBom = "33.3.0"
 flexbox = "3.0.0"
 gradle = "7.0.4"
 junit = "4.13.2"
@@ -15,6 +16,7 @@ constraintlayout = "2.1.4"
 [libraries]
 advancedcardview = { module = "com.github.sina-seyfi:AdvancedCardView", version.ref = "advancedcardview" }
 circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 flexbox = { module = "com.google.android:flexbox", version.ref = "flexbox" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }

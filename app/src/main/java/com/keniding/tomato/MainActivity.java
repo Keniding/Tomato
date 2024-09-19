@@ -85,6 +85,12 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
+        mainBinding.restaurant.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SelectActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(mainBinding.getRoot(), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
