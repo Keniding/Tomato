@@ -9,10 +9,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.keniding.tomato" />
+                  <option name="mobileSdkAppId" value="1:692607762044:android:6363a55ef0b9b15a3b53f9" />
+                  <option name="projectId" value="tomato-android-aea0a" />
+                  <option name="projectNumber" value="692607762044" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

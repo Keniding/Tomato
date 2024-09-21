@@ -64,8 +64,18 @@ dependencies {
     // cardview IMPORT
     implementation libs.advancedcardview
 
+    implementation libs.recyclerview
+
     implementation libs.circleimageview
 
 
     implementation platform(libs.firebase.bom)
+
+    // spring conf auth basic
+    implementation libs.retrofit
+    implementation libs.converter.gson
+    implementation libs.logging.interceptor
+
+    implementation libs.okhttp
+    implementation libs.logging.interceptor.v4100
 }

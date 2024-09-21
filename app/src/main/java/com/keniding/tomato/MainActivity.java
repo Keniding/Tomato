@@ -86,10 +86,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainBinding.restaurant.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
+            startActivity(intent);
+            finish();
+        });
+
+        /*
+        mainBinding.restaurant.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SelectActivity.class);
             startActivity(intent);
             finish();
         });
+*/
 
         ViewCompat.setOnApplyWindowInsetsListener(mainBinding.getRoot(), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
