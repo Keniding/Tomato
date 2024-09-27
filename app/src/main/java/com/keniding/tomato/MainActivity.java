@@ -102,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         mainBinding.restaurant.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
+            Intent intent = new Intent(MainActivity.this, TestActivity.class);
+            //Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
             startActivity(intent);
         });
 
